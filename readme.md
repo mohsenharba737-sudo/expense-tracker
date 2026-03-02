@@ -42,6 +42,14 @@ Open index.html in any modern browser
 
 No server, no installation, no dependencies — it works instantly.
 
+
+**direct link**
+
+
+https://mohsenharba737-sudo.github.io/expense-tracker/
+
+
+
 🧠 How It Works
 Choose the transaction type (income or expense)
 
@@ -169,6 +177,15 @@ index.html, style.css, app.js
 
 لا يحتاج التطبيق إلى أي سيرفر أو مكتبات — يعمل مباشرة.
 
+
+**رابط مباشر**
+
+
+https://mohsenharba737-sudo.github.io/expense-tracker/
+
+
+
+
 🧠 طريقة الاستخدام
 اختر نوع العملية (دخل أو مصروف)
 
@@ -249,4 +266,5 @@ LocalStorage API
 صفحة تسجيل دخول
 
 📄 الترخيص
+
 المشروع مفتوح المصدر ويمكن استخدامه وتعديله بحرية.
