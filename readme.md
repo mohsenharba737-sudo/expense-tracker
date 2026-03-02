@@ -1,5 +1,5 @@
 🇬🇧 README (English Version)
-Expense Tracker – Modern Arabic UI
+Expense Tracker – Modern English & Arabic UI
 A lightweight and elegant web application for tracking income and expenses.
 Designed with a clean Arabic interface, smooth interactions, and automatic data saving using LocalStorage.
 The app is fully client‑side and requires no backend or external libraries.
@@ -134,7 +134,7 @@ This project is open-source.
 You may use, modify, and distribute it freely.
 
 🇸🇦 README (Arabic Version)
-متتبع المصاريف – واجهة عربية حديثة
+متتبع المصاريف – واجهة عربية و انجليزية حديثة
 تطبيق ويب بسيط وأنيق لتتبع الدخل والمصروفات.
 مصمم بواجهة عربية احترافية، وحفظ تلقائي للبيانات باستخدام LocalStorage.
 يعمل بالكامل على المتصفح بدون أي مكتبات أو خادم خارجي.
@@ -268,3 +268,4 @@ LocalStorage API
 📄 الترخيص
 
 المشروع مفتوح المصدر ويمكن استخدامه وتعديله بحرية.
+
