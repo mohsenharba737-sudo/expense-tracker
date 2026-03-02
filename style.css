@@ -1,0 +1,253 @@
+:root {
+  --bg: #eef1f7;
+  --card: rgba(255,255,255,0.65);
+  --text: #1e293b;
+  --muted: #64748b;
+  --accent: #6366f1;
+  --accent-light: #818cf8;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --border: rgba(0,0,0,0.08);
+  --glass: rgba(255,255,255,0.45);
+}
+
+body.dark {
+  --bg: #0f172a;
+  --card: rgba(30,41,59,0.55);
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --accent: #818cf8;
+  --accent-light: #a5b4fc;
+  --danger: #f87171;
+  --success: #4ade80;
+  --border: rgba(255,255,255,0.1);
+  --glass: rgba(30,41,59,0.45);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  width: 100%;
+  max-width: 520px;
+  padding: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  border-radius: 1.4rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  animation: fadeIn 0.6s ease;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.toggle-theme,
+.toggle-lang {
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.9rem;
+  background: var(--glass);
+  cursor: pointer;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: 0.2s;
+}
+
+.toggle-theme:hover,
+.toggle-lang:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.2);
+}
+
+.balance-card {
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  color: #fff;
+  border-radius: 1.4rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 12px 30px rgba(99,102,241,0.35);
+}
+
+.balance-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.balance-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}
+
+.summary {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.summary-item {
+  flex: 1;
+}
+
+.summary-label {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.summary-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.summary-value.income { color: #bbf7d0; }
+.summary-value.expense { color: #fecaca; }
+
+.form {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.field label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.field input,
+.field select {
+  border-radius: 0.9rem;
+  border: 1px solid var(--border);
+  padding: 0.7rem 0.9rem;
+  font-size: 0.95rem;
+  background: var(--glass);
+  color: var(--text);
+  transition: 0.2s;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.25);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.7rem;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99,102,241,0.35);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background: rgba(148,163,184,0.1);
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.transactions {
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0.4rem;
+  border-bottom: 1px dashed var(--border);
+  font-size: 0.9rem;
+}
+
+.transaction-amount.income { color: var(--success); }
+.transaction-amount.expense { color: var(--danger); }
+
+.transaction-delete {
+  background: rgba(239,68,68,0.1);
+  color: var(--danger);
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.transaction-delete:hover {
+  background: rgba(239,68,68,0.2);
+  transform: translateY(-2px);
+}
+
+.empty {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
