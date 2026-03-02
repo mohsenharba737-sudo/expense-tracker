@@ -1,10 +1,20 @@
 🇬🇧 README (English Version)
+
+
 Expense Tracker – Modern English & Arabic UI
+
 A lightweight and elegant web application for tracking income and expenses.
+
 Designed with a clean English & Arabic interface, smooth interactions, and automatic data saving using LocalStorage.
+
 The app is fully client‑side and requires no backend or external libraries.
 
+
+
+
 ✨ Features
+
+
 Add income
 
 Add expense
@@ -134,12 +144,19 @@ This project is open-source.
 You may use, modify, and distribute it freely.
 
 🇸🇦 README (Arabic Version)
+
+
 متتبع المصاريف – واجهة عربية و انجليزية حديثة
+
 تطبيق ويب بسيط وأنيق لتتبع الدخل والمصروفات.
+
 مصمم بواجهة عربية و انجليزية احترافية، وحفظ تلقائي للبيانات باستخدام LocalStorage.
+
 يعمل بالكامل على المتصفح بدون أي مكتبات أو خادم خارجي.
 
 ✨ المميزات
+
+
 إضافة دخل
 
 إضافة مصروف
@@ -268,5 +285,6 @@ LocalStorage API
 📄 الترخيص
 
 المشروع مفتوح المصدر ويمكن استخدامه وتعديله بحرية.
+
 
 
